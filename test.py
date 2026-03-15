@@ -44,7 +44,7 @@ else:
     print(f"\nRecommended {user_mood} songs:")
     print(recommend.to_string(index=False))
 
-# Optional: visualize mood distribution
+# visualize mood distribution
 
 
 plt.figure(figsize=(8,5))
