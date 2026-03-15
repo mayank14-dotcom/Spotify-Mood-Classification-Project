@@ -24,6 +24,7 @@ df['mood'] = df.apply(classify_mood, axis=1)
 print("Mood distribution in dataset:")
 print(df['mood'].value_counts())
 
+
 # Save playlists for each mood
 for mood in df['mood'].unique():
     playlist = df[df['mood'] == mood][['track_name', 'artist_name', 'valence', 'energy']]
@@ -52,3 +53,5 @@ plt.title("Number of Songs by Mood")
 plt.xlabel("Mood")
 plt.ylabel("Count")
 plt.show()
+
+
